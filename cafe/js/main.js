@@ -32,6 +32,15 @@
         return false;
     });
     
+     // phone button
+     $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.phone').fadeIn('slow');
+        } else {
+            $('.phone').fadeOut('slow');
+        }
+    });
+  
 
     // Date and time picker
     $('.date').datetimepicker({
